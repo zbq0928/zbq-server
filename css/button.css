@@ -1,0 +1,24 @@
+.button {
+    background: linear-gradient(90deg,#00fff0,#0083fe,#00fff0);
+    background-size: 200%;
+    width: 120px;
+    height: 40px;
+    color: white;
+    padding: 0px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-position .6s;
+    background-position: 0 0;
+}
+.button:link .button:visited {
+    transition: background-position .6s;
+    background-position: 0 0;
+}
+.button:hover {
+    transition: background-position .6s;
+    background-position: 100% 0;
+}

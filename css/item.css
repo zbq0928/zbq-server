@@ -1,0 +1,9 @@
+.box {
+    width: 320px;
+    height: 150px;
+    background-color: white;
+    border: 2px;
+    border-color: black;
+    border-style: groove;
+    border-radius: 25px;
+}
