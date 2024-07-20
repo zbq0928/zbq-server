@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="./css/button.css">
@@ -26,14 +26,19 @@
             setTimeout(hideFold,3000);
             function showFold() {
                 document.getElementById("fold").style.opacity = "1.0";
+                document.getElementById("hideFold").style.opacity = "1.0";
             }
             function hideFold() {
-                if (!forceShowFold) document.getElementById("fold").style.opacity = "0.0";
+                if (!forceShowFold) {
+                    document.getElementById("fold").style.opacity = "0.0";
+                    document.getElementById("hideFold").style.opacity = "0.0";
+                }
+
             }
         </script>
     </head>
     <body>
-        <div id="menu" style="width: 150px;height: 100%;float: left;"> 
+        <div id="menu" style="width: 150px;height: 100%;float: left;position: absolute;bottom: 0px;left: 0px;"> 
             <div style="background-image: linear-gradient(90deg,#00fff0,#0083fe);width: 100%;height: 80px;text-align: center;border: 10px;">
                 <a href="./index.html">
                     <div class="home"></div>
@@ -87,7 +92,7 @@
                     </div>
                     <div style="position: relative;left: 20px;top: 10px;">about</div>
                 </a>
-                <div class="button" style="width: 10px;height: 40px;position: absolute;left: 150px;border-radius: 100%;" onclick="fold()" onmouseover="showFold()" onmouseleave="setTimeout(hideFold,3000)">
+                <div id="hideFold" class="button" style="width: 10px;height: 40px;position: absolute;left: 150px;border-radius: 100%;transition: opacity .6s,background-position .6s;" onclick="fold()" onmouseover="showFold()" onmouseleave="setTimeout(hideFold,3000)">
                     <img id="fold" src="./images/left_arrow.svg" style="position: relative;right: 11px;top: 4px;transition: rotate .6s,opacity .6s;">
                 </div>
                 <a href="./contact.html" class="button" style="width: 120px;height: 40px;border-bottom-right-radius: 12px;"> 

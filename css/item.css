@@ -12,7 +12,35 @@
     box-shadow: none;
     transition: top .6s,box-shadow .6s;
 }
+
 .box:hover {
     top: 20px;
     box-shadow: 5px 5px 3px #888888;
+}
+
+.title {
+    width: 380px;
+    height: 30px;
+    text-align: left;
+    font: bolder;
+    font-size: 30px;
+    background-image: linear-gradient(90deg,#00fff0,#0083fe);
+    padding: 10px;
+    position: relative;
+    bottom: 33px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: #000000 solid 2px;
+    border-bottom: #000000 solid 1px;
+}
+
+.content {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    right: 1px;
+    bottom: 64px;
+    border: #000000 solid 1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
