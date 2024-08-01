@@ -1,107 +1,68 @@
-<!DOCTYPE html>
-<html lang="zh">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="./css/button.css">
-        <link rel="stylesheet" type="text/css" href="./css/item.css">
-        <link rel="stylesheet" type="text/css" href="./css/menu.css">
-        <link rel="stylesheet" type="text/css" href="./css/home.css">
-        <script src="./scripts/timer.js"></script>
-        <script>
-            var isFolded = false;
-            var forceShowFold = false;
-            function fold() {
-                isFolded = !isFolded;
-                forceShowFold = !forceShowFold;
-                if (isFolded) {
-                    document.getElementById("menu").style.left = "-150px";
-                    document.getElementById("fold").style.rotate = "180deg";
-                    showFold();
-                }
-                else {
-                    document.getElementById("menu").style.left = "0";
-                    document.getElementById("fold").style.rotate = "0deg";
-                }
-            }
-            setTimeout(hideFold,3000);
-            function showFold() {
-                document.getElementById("fold").style.opacity = "1.0";
-                document.getElementById("hideFold").style.opacity = "1.0";
-            }
-            function hideFold() {
-                if (!forceShowFold) {
-                    document.getElementById("fold").style.opacity = "0.0";
-                    document.getElementById("hideFold").style.opacity = "0.0";
-                }
-
-            }
-        </script>
-    </head>
-    <body>
-        <div id="menu" style="width: 150px;height: 100%;float: left;position: absolute;bottom: 0px;left: 0px;"> 
-            <div style="background-image: linear-gradient(90deg,#00fff0,#0083fe);width: 100%;height: 80px;text-align: center;border: 10px;">
-                <a href="./index.html">
-                    <div class="home"></div>
-                </a>
+<div id="menu" style="width: 150px;height: 100%;float: left;position: absolute;bottom: 0px;left: 0px;"> 
+    <div style="background-image: linear-gradient(90deg,#00fff0,#0083fe);width: 100%;height: 80px;text-align: center;border: 10px;">
+        <a href="./index.html">
+            <div class="home">
+                <img class="off" src="./images/__ZBQ__.ico" width="64" height="64">
+                <img class="on" src="./images/home.svg" width="64" height="64">
             </div>
-            <div style="background-image: linear-gradient(90deg,#00fff0,#0083fe);width: 100%;height: 20px;border: 10px;">
-                <img src="./images/time.svg" width="20" height="20" style="position: absolute;left: 15px;">
-                <div id="time" style="position: absolute;left: 40px;color: white;"></div>
-            </div>
-            <div style="background-image: linear-gradient(90deg,#00fff0,#0083fe);width: 100%;height: 20px;border: 10px;">
-                <img src="./images/date.svg" width="20" height="20" style="position: absolute;left: 15px;">
-                <div id="date" style="position: absolute;left: 40px;color: white;"></div>
-            </div>
+        </a>
+    </div>
+    <div style="background-image: linear-gradient(90deg,#00fff0,#0083fe);width: 100%;height: 20px;border: 10px;">
+        <img src="./images/time.svg" width="20" height="20" style="position: absolute;left: 15px;">
+        <div id="time" style="position: absolute;left: 40px;color: white;"></div>
+    </div>
+    <div style="background-image: linear-gradient(90deg,#00fff0,#0083fe);width: 100%;height: 20px;border: 10px;">
+        <img src="./images/date.svg" width="20" height="20" style="position: absolute;left: 15px;">
+        <div id="date" style="position: absolute;left: 40px;color: white;"></div>
+    </div>
+    <div>
+        <a href="https://zbq0928.github.io/" class="button" style="width: 120px;height: 40px;" c> 
             <div>
-                <a href="https://zbq0928.github.io/" class="button" style="width: 120px;height: 40px;" c> 
-                    <div>
-                        <img src="./images/blog.svg" width="40" height="40" style="position: absolute;left: 4px;">
-                    </div>
-                    <div style="position: relative;left: 20px;top: 10px;">Blog</div>
-                </a>
-                <a href="./status.html" class="button" style="width: 120px;height: 40px;"> 
-                    <div >
-                        <img src="./images/status.svg" width="40" height="40" style="position: absolute;left: 4px;">
-                    </div>
-                    <div style="position: relative;left: 20px;top: 10px;">Status</div>
-                </a>
-                <a href="./files.html" class="button" style="width: 120px;height: 40px;">
-                    <div>
-                        <img src="./images/files.svg" width="40" height="40" style="position: absolute;left: 4px;">
-                    </div>
-                    <div style="position: relative;top: 10px;">Files</div>
-                </a>
-                <a href="./control_panel.html" class="button" style="width: 120px;height: 40px;"> 
-                    <div style="position: relative;top: 10px;">Control Panel</div>
-                </a>
-                <a href="./mc_servers.html" class="button" style="width: 120px;height: 40px;"> 
-                    <div>
-                        <img src="./images/mc_servers.svg" width="40" height="40" style="position: absolute;left: 4px;">
-                    </div>
-                    <div style="position: relative;left: 20px;top: 10px;">MC Servers</div>
-                </a>
-                <a href="./summary.html" class="button" style="width: 120px;height: 40px;"> 
-                    <div>
-                        <img src="./images/summary.svg" width="40" height="40" style="position: absolute;left: 4px;">
-                    </div>
-                    <div style="position: relative;left: 20px;top: 10px;">Summary</div>
-                </a>
-                <a href="./about.html" class="button" style="width: 120px;height: 40px;"> 
-                    <div>
-                        <img src="./images/about.svg" width="40" height="40" style="position: absolute;left: 4px;">
-                    </div>
-                    <div style="position: relative;left: 20px;top: 10px;">about</div>
-                </a>
-                <div id="hideFold" class="button" style="width: 10px;height: 40px;position: absolute;left: 150px;border-radius: 100%;transition: opacity .6s,background-position .6s;" onclick="fold()" onmouseover="showFold()" onmouseleave="setTimeout(hideFold,3000)">
-                    <img id="fold" src="./images/left_arrow.svg" style="position: relative;right: 11px;top: 4px;transition: rotate .6s,opacity .6s;">
-                </div>
-                <a href="./contact.html" class="button" style="width: 120px;height: 40px;border-bottom-right-radius: 12px;"> 
-                    <div>
-                        <img src="./images/contact.svg" width="40" height="40" style="position: absolute;left: 4px;">
-                    </div>
-                    <div style="position: relative;left: 20px;top: 10px;">Contact</div>
-                </a>
+                <img src="./images/blog.svg" width="40" height="40" style="position: absolute;left: 4px;">
             </div>
+            <div style="position: relative;left: 20px;top: 10px;">Blog</div>
+        </a>
+        <a href="./status.html" class="button" style="width: 120px;height: 40px;"> 
+            <div >
+                <img src="./images/status.svg" width="40" height="40" style="position: absolute;left: 4px;">
+            </div>
+            <div style="position: relative;left: 20px;top: 10px;">Status</div>
+        </a>
+        <a href="./files.html" class="button" style="width: 120px;height: 40px;">
+            <div>
+                <img src="./images/files.svg" width="40" height="40" style="position: absolute;left: 4px;">
+            </div>
+            <div style="position: relative;top: 10px;">Files</div>
+        </a>
+        <a href="./control_panel.html" class="button" style="width: 120px;height: 40px;"> 
+            <div style="position: relative;top: 10px;">Control Panel</div>
+        </a>
+        <a href="./mc_servers.html" class="button" style="width: 120px;height: 40px;"> 
+            <div>
+                <img src="./images/mc_servers.svg" width="40" height="40" style="position: absolute;left: 4px;">
+            </div>
+            <div style="position: relative;left: 20px;top: 10px;">MC Servers</div>
+        </a>
+        <a href="./summary.html" class="button" style="width: 120px;height: 40px;"> 
+            <div>
+                <img src="./images/summary.svg" width="40" height="40" style="position: absolute;left: 4px;">
+            </div>
+            <div style="position: relative;left: 20px;top: 10px;">Summary</div>
+        </a>
+        <a href="./about.html" class="button" style="width: 120px;height: 40px;"> 
+            <div>
+                <img src="./images/about.svg" width="40" height="40" style="position: absolute;left: 4px;">
+            </div>
+            <div style="position: relative;left: 20px;top: 10px;">about</div>
+        </a>
+        <div id="hideFold" class="button" style="width: 10px;height: 40px;position: absolute;left: 150px;border-radius: 100%;transition: opacity .6s,background-position .6s;" onclick="fold()" onmouseover="showFold()" onmouseleave="setTimeout(hideFold,3000)">
+            <img id="fold" src="./images/left_arrow.svg" style="position: relative;right: 11px;top: 4px;transition: rotate .6s,opacity .6s;">
         </div>
-    </body>
-</html>
+        <a href="./contact.html" class="button" style="width: 120px;height: 40px;border-bottom-right-radius: 12px;"> 
+            <div>
+                <img src="./images/contact.svg" width="40" height="40" style="position: absolute;left: 4px;">
+            </div>
+            <div style="position: relative;left: 20px;top: 10px;">Contact</div>
+        </a>
+    </div>
+</div>

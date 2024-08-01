@@ -1,0 +1,13 @@
+#flex-container {
+    position: relative;
+    left: 180px;
+    bottom: 5px;
+    width: calc(100% - 180px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: row;
+    transition: left .6s,width .6s;
+}

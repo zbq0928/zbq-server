@@ -1,14 +1,30 @@
 .home {
     width: 64px;
     height: 64px;
-    background-image: url(../images/contact/Bilibili.svg);
     position: relative;
+    top: 10px;
     left: 43px;
-    transition: background-image .6s;
+    .on {
+        position: relative;
+        opacity: 0;
+        transition: opacity .6s;
+    }
+    .off {
+        position: absolute;
+        opacity: 1;
+        transition: opacity .6s;
+        border-radius: 100%;
+    }
 }
 .home:hover {
     transition: content .6s;
     cursor: pointer;
-    background-image: url("../images/home.svg");
-    transition: background-image .6s;
+    .on {
+        opacity: 1;
+        transition: opacity .6s;
+    }
+    .off {
+        opacity: 0;
+        transition: opacity .6s;
+    }
 }

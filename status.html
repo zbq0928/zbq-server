@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh">
     <head>
-        <meta charset="utf-8">
         <title>ZBQ's Server</title>
-        <script src="./scripts/jquery-3.7.1.min.js"></script>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="images/x-icon" href="./images/__ZBQ__.ico">
     </head>
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        $('head').load("./head.html");
+    </script>
     <body>
         <div class="index"></div>
         <script>
             $('.index').load("./index_list.html");
         </script>
+        
     </body>
 </html>
