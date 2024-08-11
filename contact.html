@@ -14,6 +14,56 @@
         <script>
             $('.index').load("./index_list.html");
         </script>
-        
+        <style>
+            .contact {
+                width: 280px;
+                height: 70px;
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                text-decoration: none;
+            }
+        </style>
+        <div class="prompt" id="copy" style="width: 60px;height: 23px;position: relative;opacity: 0%;">
+            Copied!
+        </div>
+        <div class="box" style="width: 900px;margin: 20% 25% 0 25%;">
+            <div id="flex-container" style="align-items: center;justify-content:center;">
+                <div class="box" style="width: 582px;height: 140px;">
+
+                </div>
+                <div class="box contact" href="x_123_d@163.com" onclick="copy(this,event)">
+                    <img class="icon" src="./images/contact/163.png">
+                    <p style="position: relative;transform: translateY(50%);text-align: center;">
+                        x_123_d@163.com
+                    </p>
+                </div>
+                <div class="box contact" href="x.123.d.0928@gmail.com" onclick="copy(this,event)">
+                    <img class="icon" src="./images/contact/Gmail.svg">
+                    <p style="position: relative;transform: translateY(50%);text-align: center;">
+                        x.123.d.0928@gmail.com
+                    </p>
+                </div>
+                <div class="box contact" href="https://github.com/zbq0928" onclick="copy(this,event)">
+                    <img class="icon" src="./images/contact/Github.svg">
+                    <p style="position: relative;transform: translateY(50%);text-align: center;">
+                        zbq0928
+                    </p>
+                </div>
+                <div class="box contact" href="491978817" onclick="copy(this,event)">
+                    <img class="icon" src="./images/contact/Bilibili.svg">
+                    <p style="position: relative;transform: translateY(50%);text-align: center;">
+                        __ZBQ__
+                    </p>
+                </div>
+                <div class="box contact" href="1490714270" onclick="copy(this,event)">
+                    <img class="icon" src="./images/contact/QQ.svg">
+                    <p style="position: relative;transform: translateY(50%);text-align: center;">
+                        llangren
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

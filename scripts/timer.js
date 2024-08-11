@@ -1,4 +1,4 @@
-var timer = setInterval(function(){getTime()},1000);
+var timer = setInterval(getTime,10);
 function getTime() {
     var date = new Date();
     var t = date.toLocaleTimeString();
