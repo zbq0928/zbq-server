@@ -1,0 +1,35 @@
+@keyframes load_screen {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#load_screen {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 99999;
+    opacity: 100%;
+    transition: opacity .3s;
+}
+
+#load_screen div {
+    margin: 25% 50% 0 50%;
+    width: 64px;
+    height: 64px;
+}
+
+#load_screen div div {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform-origin: 4px 32px;
+    left: 32px;
+    top: 0;
+    background-color: dodgerblue;
+    border-radius: 100%;
+    animation: load_screen 1.2s infinite ease-in-out;
+}
