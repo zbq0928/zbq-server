@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>ZBQ's Server</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="images/x-icon" href="./images/__ZBQ__.ico">
+    </head>
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script>
+        $('head').load("./public/head.html");
+    </script>
+    <body>
+        <div id="load_screen"></div>
+        <script>
+            $("#load_screen").load("./public/load_screen.html");
+        </script>
+        <div class="index"></div>
+        <script>
+            $('.index').load("./public/index_list.html");
+        </script>
+        
+        </div>
+    </body>
+</html>
